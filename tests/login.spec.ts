@@ -32,5 +32,6 @@ test.describe("Login", () => {
     // authenticatedPage fixture already logged in
     await loginPage.logout();
     expect(page.url()).toContain("/auth/login");
+    console.log("Logout successful, back on login page");
   });
 });
