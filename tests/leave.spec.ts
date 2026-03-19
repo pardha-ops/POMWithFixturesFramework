@@ -7,6 +7,7 @@ test.describe("Leave", () => {
   }) => {
     await leavePage.navigate();
     const isLoaded = await leavePage.isLoaded();
+    console.log("Is Assign Leave page loaded?", isLoaded);
     expect(isLoaded).toBe(true);
   });
 
