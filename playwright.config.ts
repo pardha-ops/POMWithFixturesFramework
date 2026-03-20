@@ -11,6 +11,9 @@ export default defineConfig({
       args: ["--disable-features=PasswordProtectionWarningTrigger"],
     },
     baseURL: "https://opensource-demo.orangehrmlive.com",
+    extraHTTPHeaders: {
+      Accept: "application/json",
+    },
     headless: false,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
